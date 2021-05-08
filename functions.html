@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Odd or Even function
+var numbers = [1,10,3];
+var result = numbers.map(myFunction);
+     // alert(result); for testing 
+function myFunction(value, index, array) {
+    if (value % 2 === 0) {      
+             return  value + " is even";
+            }else {
+             return  value +" is odd";
+            }
+}
+// Even numbers between 1 to 20
+var numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+var res = numbers.filter(myFunction);
+//alert(res + "   all even numbers"); for testing 
+function myFunction(value, index, array) {
+if(value%2===0)
+  return value;
+}
+// Average 
+
+var numbers = [5,7,1,2,4,24,10,12,23,6,9,8,40,47,5,22,15,14,55,88];
+var sum = numbers1.reduce(myFunction);
+//alert(sum/numbers1.length +"  this  the average "); for testing 
+function myFunction(all, value, index, array) {
+  return all + value;
+}
+//Narcissistic Number Or Not 
+let myFunc = num => Number(num);
+var newArr = Array.from(String(myInt), myFunc);
+var sum=[];
+sum= newArr.map(myFunction);
+//alert(sum); for testing
+var all_sum=sum.reduce(sumall);
+var res=result(myInt,all_sum);
+//alert(res); for testing
+function myFunction(value,index,array) {
+  return  value**array.length;
+}
+function sumall(total, value, index, array) {
+  return total + value;
+}
+function result(myInt,sum){
+if(sum==myInt){
+return "Yes Narcissistic Number"
+}else{
+return "No Narcissistic Number"
+}
+}
+
+// largest Number
+
+var numbers1 = [4,2,15,60,14,8,7,20,100,99,50,1,0,3,12,45,18,30,55,110];
+var sum = numbers1.reduce(myFunction);
+//alert(sum); for testing 
+function myFunction(total, value, index, array) {
+if(value>=total){
+ total=value;
+}
+ return total;
+}
+
+    </script>
+</body>
+</html>
