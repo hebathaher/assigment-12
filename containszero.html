@@ -8,14 +8,12 @@
 </head>
 <body>
     <script>
- var numbers1 = [4,2,15,60,14,7,0,55,110];
-var x=false;
-for(var i=0;i<=numbers1.length;i++){
-if(numbers1[i]==0){
-x=true;
+ var numbers = [1,8,-7,0];
+var containzero = numbers.some(containszero);
+//alert(containzero); for testing
+function containszero(value, index, array) {
+  return value==0;
 }
-}
-//alert("if array contains zero  ? " + x);   for testing
     </script>
 </body>
 </html>
